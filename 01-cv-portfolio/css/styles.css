@@ -177,6 +177,90 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .portfolio-section .p-item.p-item-2 .img:last-child{ float: right; width: 50%; padding-left: 7.5px; }
 
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  color: #FFFFFF;	
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.0;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 375;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  line-height: 1.45;
+  font-family: 'Source Sans Pro';
+  opacity: 0.0;
+}
+
+.portfolio-item:hover .caption .caption-content h2{
+  opacity: 1.0;
+  transition: 0.6s;
+}
+
+.portfolio-item:hover .caption .caption-content p{
+  opacity: 1.0;
+  transition: 0.6s;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
 
 /* ---------------------------------
 6. ABOUT SECTION
@@ -210,6 +294,8 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 8. EDUCATION SECTION
 --------------------------------- */
 
+.education-section{ background: #28023D; color: #fff; }
+
 .education-wrapper{ position: relative; }
 
 .education-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
@@ -221,6 +307,10 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 	height: 16px; border-radius: 10px; z-index: 1;
 	box-shadow: 0 0 0 8px rgba(255,171,0, .4); background: #FFAB00; }
 	
+.education .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
+
+.education .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
 	
 /* ---------------------------------
 9. COUNTER SECTION
