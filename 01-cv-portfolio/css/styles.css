@@ -392,6 +392,10 @@ header .downlad-btn:hover {
   padding-bottom: 0;
 }
 
+section .content-section {
+  margin-bottom: 100px;
+}
+
 .portfolio-section .portfolioFilter {
   margin-top: 60px;
   color: #666;
