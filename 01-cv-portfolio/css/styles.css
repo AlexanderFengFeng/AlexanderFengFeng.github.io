@@ -560,8 +560,10 @@ header .info .right-area {
 
 .skills-section .level {
   margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: inline-block;
-  padding: 1px 25px 0;
+  padding: 1px 60px 0;
   border-radius: 5px;
   background: #ffab00;
   color: #fff;
