@@ -748,5 +748,14 @@ header .vertical-center {
   background: hsl(0, 0%, 100%);
   width: 75%;
   max-width: 1500px;
-  /* margin-top: 30px;  */
+  font-size: 20px;
+}
+
+.calendar .ContributionCalendar-label {
+  fill: #3c3c3c;
+  font-weight: 500;
+}
+
+.calendar .text-muted {
+  font-size: 15px;
 }
