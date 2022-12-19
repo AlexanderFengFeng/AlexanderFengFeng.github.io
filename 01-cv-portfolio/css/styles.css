@@ -277,6 +277,10 @@ header .info .right-area {
   margin-left: 45px;
 }
 
+header .vertical-center {
+  padding-top: 7.5px;
+}
+
 .download-btn {
   text-align: center;
   padding: 15px 30px;
