@@ -259,8 +259,8 @@ header {
 }
 
 header .heading-wrapper {
-  border-radius: 5px;
-  padding: 30px 40px 20px;
+  border-radius: 10px;
+  padding: 20px 40px 15px;
   background: #ffad01;
 }
 
@@ -278,14 +278,14 @@ header .info .right-area {
 }
 
 header .vertical-center {
-  padding-top: 7.5px;
+  padding-top: 8px;
 }
 
 .download-btn {
   text-align: center;
   padding: 15px 30px;
   border-radius: 4px;
-  margin-top: 30px;
+  margin-top: 20px;
   box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.3);
   background: #887392;
   color: #fff;
@@ -356,14 +356,15 @@ header .vertical-center {
 }
 
 .intro .social-icons > li > a {
-  height: 35px;
-  line-height: 35px;
-  width: 35px;
-  border-radius: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 70px;
+  font-size: 30px;
+  border-radius: 10px;
   overflow: hidden;
   z-index: 1;
   position: relative;
-  margin: 0 5px 5px;
+  margin: 0 10px;
   background: #887392;
   color: #fff;
 }
